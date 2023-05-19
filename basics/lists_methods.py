@@ -22,3 +22,7 @@ print("insert: ", natural_numbers)
 # pop:
 natural_numbers.pop(0)
 print("pop: ", natural_numbers)
+
+# unpacked:
+first, *rest, last = natural_numbers
+print("unpacked: ", first, rest, last)
