@@ -28,3 +28,10 @@ print("my_list: ", my_list)
 print("my_list[0]: ", my_list[0])
 print("my_list[1]['c']: ", my_list[1]['c'])
 print("my_list[1]['c'][1][1]: ", my_list[1]['c'][1])
+
+# add:
+dictionary['e'] = 5
+print("add: ", dictionary)
+
+my_list[2]['a'] = 'something'
+print("add: ", my_list)
