@@ -31,9 +31,22 @@ print("my_list[1]['c'][1][1]: ", my_list[1]['c'][1])
 
 # add:
 dictionary['e'] = 5
-print("add: ", dictionary)
+print("add dictionary: ", dictionary)
 
 my_list[2]['a'] = 'something'
-print("add: ", my_list)
+print("add my_list: ", my_list)
 
 print("dictionary.keys(): ", dictionary.keys())
+print("dictionary.items(): ", dictionary.items())
+print("dictionary.values(): ", dictionary.values())
+
+print("\n\n")
+
+for key in dictionary:
+    print("key: ", key)
+
+for value in dictionary.values():
+    print("value: ", value)
+
+for items in dictionary.items():
+    print("Items: ", items)
