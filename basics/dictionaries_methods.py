@@ -35,3 +35,5 @@ print("add: ", dictionary)
 
 my_list[2]['a'] = 'something'
 print("add: ", my_list)
+
+print("dictionary.keys(): ", dictionary.keys())
