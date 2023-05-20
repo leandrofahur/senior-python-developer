@@ -1,14 +1,13 @@
 class PlayerCharacter:
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        self._name = name
+        self._age = age
 
     def run(self):
         print('run')
 
     def speak(self):
-
-        print(f'my name is {self.name} and {self.age} years old')
+        print(f'my name is {self._name} and {self._age} years old')
 
     @classmethod
     def adding_things(cls, num_1, num_2):
