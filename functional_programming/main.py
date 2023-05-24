@@ -61,3 +61,9 @@ def accumulator(acc, item):
 print('reduce:\n')
 print(reduce(accumulator, my_list, 0))
 print(my_list)  # my_list is not changed
+print('\n')
+
+# lambda expression
+print('lambda:\n')
+print(reduce(lambda acc, item: acc + item, my_list, 0))
+print(my_list)  # my_list is not changed
