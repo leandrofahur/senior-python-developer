@@ -1,3 +1,5 @@
+from functools import reduce
+
 # Notes:
 # 1. Deterministic: always returns the same output given the same input
 # 2. No side effects: does not depend on outside world (resources)
@@ -48,3 +50,14 @@ print(list(zip(my_list, your_list)))
 print(my_list)  # my_list is not changed
 print(your_list)  # your_list is not changed
 print('\n')
+
+
+# reduce: reduce an iterable to a single value
+def accumulator(acc, item):
+    print(acc, item)
+    return acc + item
+
+
+print('reduce:\n')
+print(reduce(accumulator, my_list, 0))
+print(my_list)  # my_list is not changed
