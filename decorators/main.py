@@ -14,16 +14,16 @@ def greet2():
 
 
 def my_decorator(func):
-    def wrap_func():
+    def wrap_func(x):
         print('********')
-        func()
+        func(x)
         print('********')
     return wrap_func
 
 
 @my_decorator
-def hello():
-    print('hello')
+def hello(greeting):
+    print(greeting)
 
 
-hello()
+hello('hi')
