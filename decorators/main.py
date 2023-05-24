@@ -14,16 +14,23 @@ def greet2():
 
 
 def my_decorator(func):
-    def wrap_func(x):
+    def wrap_func(*args, **kwargs):
         print('********')
-        func(x)
+        func(*args, **kwargs)
         print('********')
     return wrap_func
 
 
+# @my_decorator
+# def hello(greeting):
+#     print(greeting)
+
+
+# hello('hi')
+
 @my_decorator
-def hello(greeting):
-    print(greeting)
+def hello(greeting='hi', emoji=':('):
+    print(greeting, emoji)
 
 
-hello('hi')
+hello()
