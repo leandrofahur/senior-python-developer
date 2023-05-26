@@ -18,3 +18,5 @@ resized_image.show()
 
 filter_image.save('gray_pikachu.png', 'png')
 resized_image.save('resized_gray_pikachu.png', 'png')
+
+# filter_image.thumbnail((300, 300))
