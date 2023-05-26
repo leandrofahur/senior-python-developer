@@ -6,6 +6,6 @@
 
 # file.close()
 
-with open('test.txt', mode='r+') as my_file:
-    text = my_file.write('Hey it\'s me!')
-    print(my_file.readlines())
+with open('test.txt', mode='w') as my_file:
+    text = my_file.write('=)')
+    print(text)
