@@ -4,15 +4,14 @@ from datetime import datetime
 
 
 class Log_Level(Enum):
-  DEBUG = 0
-  INFO = 1
-  WARNING = 2
-  ERROR = 3
-  CRITICAL = 4
+  INFO = 0
+  WARNING = 1
+  ERROR = 2
+  CRITICAL = 3
 
 
 class Logger:
-  """"
+  """
   This is a basic Logger class that can be used to log messages to a file.
   """
 
@@ -71,10 +70,8 @@ class Logger:
       f.write(
           f'[{log_level.CRITICAL.name}] - {datetime.now().strftime("%H:%M:%S")}: {message}\n')
 
-  # def debug(self, message: str, log_level=Log_Level.DEBUG):
-  #   pass
-
 
 logger = Logger()
+print(logger.info.__doc__)
 logger.info("Loggingmy first information")
 logger.error("Loggingmy first error")

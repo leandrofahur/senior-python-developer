@@ -1,0 +1,3 @@
+2023-05-27 12:52:57.408826:
+[INFO] - 12:52:57: Loggingmy first information
+[ERROR] - 12:52:57: Loggingmy first error
