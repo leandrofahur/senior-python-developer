@@ -52,9 +52,24 @@ class Logger:
           f'[{log_level.WARNING.name}] - {datetime.now().strftime("%H:%M:%S")}: {message}\n')
 
   def error(self, message: str, log_level=Log_Level.ERROR):
+    """
+    Write an error message to the log file.
+    :param message: The error message.
+    :param log_level: The log_level ERROR
+    """
     with open(self._file, 'a', encoding='utf-8') as f:
       f.write(
           f'[{log_level.ERROR.name}] - {datetime.now().strftime("%H:%M:%S")}: {message}\n')
+
+  def critical(self, message: str, log_level=Log_Level.ERROR):
+    """
+    Write an critical message to the log file.
+    :param message: The critical message.
+    :param log_level: The log_level CRITICAL
+    """
+    with open(self._file, 'a', encoding='utf-8') as f:
+      f.write(
+          f'[{log_level.CRITICAL.name}] - {datetime.now().strftime("%H:%M:%S")}: {message}\n')
 
   # def debug(self, message: str, log_level=Log_Level.DEBUG):
   #   pass
