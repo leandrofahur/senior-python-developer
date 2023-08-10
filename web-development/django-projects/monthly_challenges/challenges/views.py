@@ -22,8 +22,8 @@ monthly_challenges = {
 def monthly_challenges_by_number(request, month):
   try:
     months = list(monthly_challenges.keys())
-    forward_month = months[month]
-    return HttpResponseRedirect(forward_month)
+    forward_month = months[month-1]
+    return HttpResponseRedirect("/challenges/" + forward_month)
   except:
     return HttpResponseNotFound("<h1>This month is not supported!</h1>")
 
